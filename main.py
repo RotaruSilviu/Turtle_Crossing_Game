@@ -24,13 +24,6 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     car.create_car()
-    ### Cu if statement o sa se genereze masini odata la 6 ture
-    ## Daca vrem ca masinile sa fie mai rare o sa marim nr de loops.
-    # if counter < 6:
-    #     counter += 1
-    #     if counter >= 6:
-    #         car.create_car()
-    #         counter = 0
     for each_car in car.cars:
         if player.distance(each_car) < 20:
             score.game_over()
